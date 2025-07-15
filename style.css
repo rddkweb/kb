@@ -155,7 +155,7 @@ body, html {
     height: 200px !important;
     left:100px !important;
      z-index: 20;
-     animation: p-move 6s linear 0s 1 forwards;
+     animation: p-move 5s linear 0s 1 forwards;
     
  
 }
