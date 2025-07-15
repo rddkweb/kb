@@ -307,7 +307,7 @@ bottom: 0px;
     }
    @keyframes p-move {
       0% {
-        transform: translateX(150%);
+        transform: translateX(110%);
       }
       100% {
       transform: translateX(-calc(100vw - 200px));
