@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="color-scheme" content="only light">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wish you Happy birthday Ma </title>
+    <link rel="icon" href="./assets/img/birthday-cake-svgrepo-com.svg" type="image/x-icon">
+    <link rel="stylesheet" types="css" href="./style.css">
+<!-- In <head> -->
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Charm&display=swap" rel="stylesheet">
+
+</head>
+<body class="bodyelement" >
+<!--<div class="sky"></div>--> 
+<div class="preloader">
+  <div class="panda-spinner">
+    <div class="panda-face">🐼</div>
+    <div class="circle-spinner"></div>
+  </div>
+</div>
+
+<div id="container" class="Main-section">
+ <div class="sky">
+    <div class="moon"></div>
+   
+  </div>
+<div id="myDiv" class="message"><div class="vintage-letter"><div class="text-area">
+     <button class="close-btn" id="removeBtn">Thank You</button>
+  <h2>இனிய பிறந்தநாள் வாழ்த்துக்கள்! 🎉</h2>
+
+<p>
+என் அன்பான தோழிக்கு, இந்த நாள் உனக்கு மகிழ்ச்சியையும், அன்பையும், கொண்டாட்டத்தையும் கொண்டு வரட்டும்.
+</p>
+
+<p>
+உன் வாழ்வில் எத்தனை தடங்கல்கள் வந்தாலும், உன் புன்னகையை ஒருபோதும் இழக்காதே. உன் இலக்குகளில் உறுதியாக இரு. ஏனெனில் அதுவே உன் எதிர்காலத்திற்கு உதவும்.
+</p>
+
+<p>
+இந்த வருடம் உனக்கு அமைதியையும், செழிப்பையும், நீ விரும்பிய அனைத்தையும் தரட்டும். எப்போதும் சிரித்துக்கொண்டே இரு, மகிழ்ச்சியாக இரு! 🐼
+</p>
+
+
+  <p>
+    அன்புடன்,<br>
+    <strong></strong> 🐼
+    </div>
+</div>
+</div>
+<div class="panda-container">
+    <dotlottie-player 
+      src="https://lottie.host/7b936f0c-ea3b-411f-ae62-e2035f9c9871/j1mO43kIuK.lottie" 
+      background="transparent" 
+      speed="1" 
+      style="width: 100px; height: 100px;" 
+      loop 
+      autoplay>
+    </dotlottie-player>
+    <div class="birthday-text">🎉 <span class="text-b">Wish You Happy Birthday!</span> 🎉</div>
+    </div>
+<script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+<dotlottie-player class="bot-panda"
+src="https://lottie.host/8ca6dd99-8abc-457c-88e6-f3d2d46ed0dc/TjW8kJg4lK.lottie"
+ background="transparent" 
+ speed="1" 
+ style="width: 300px; height: 300px;" 
+loop 
+ autoplay
+>
+
+</dotlottie-player>
+<button class="b-button" id="addBtn">Click Me</button>
+
+<img class="img-f" src="https://www.pngplay.com/wp-content/uploads/12/Snow-PNG-Clip-Art-HD-Quality.png" alt="">
+
+    
+</div>
+      
+<script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+<script src="./script.js"></script>
+<script>
+window.addEventListener("load", function () {
+  setTimeout(function () {
+    // Hide preloader
+    document.querySelector(".preloader").style.display = "none";
+
+    // Add class to body
+   
+const bo = document.querySelector(".bodyelement");
+if (bo) {
+  bo.classList.add("animate");
+}
+    // Fix: getElementById or querySelector, not getElements
+    const main = document.getElementById("main-content");
+    if (main) {
+      main.style.opacity = 1;
+    }
+
+  }, 4500);
+});
+
+
+
+  const myDiv = document.getElementById("myDiv");
+  const addBtn = document.getElementById("addBtn");
+  const removeBtn = document.getElementById("removeBtn");
+
+  addBtn.addEventListener("click", function () {
+    myDiv.classList.add("view");
+  });
+
+  removeBtn.addEventListener("click", function () {
+    myDiv.classList.remove("view");
+  });
+</script>
+
+</body>
+</html>

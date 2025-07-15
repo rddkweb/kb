@@ -1,0 +1,324 @@
+*{
+padding: 0;
+margin: 0;
+}
+/* Preloader base */
+.preloader {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: #fff;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Panda Spinner Container */
+.panda-spinner {
+ position: relative;
+    display: flex
+;
+    width: 100px;
+    height: 100px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Panda Face Emoji */
+.panda-face {
+  font-size: 48px;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+
+/* Circle Spinner around Panda */
+.circle-spinner {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100px;
+  height: 100px;
+  border: 5px solid #ddd;
+  border-top-color: #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  z-index: 1;
+}
+
+/* Spinner animation */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+.sky {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  /* opacity:0.7 !important; */
+}
+
+/* 🌙 Moon */
+.moon {
+  position: absolute;
+  top: 80px;
+  right: 100px;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle at 30% 30%, #fff, #ccc);
+  border-radius: 50%;
+  box-shadow: 0 0 25px #fff, 0 0 60px #ccc;
+  z-index: 2;
+}
+
+/* ✨ Stars */
+
+
+
+.Main-section{
+
+    height: 100vh;
+    background: conic-gradient(at bottom right, #1d4ed8, #1e40af, #111827);
+
+}
+.block{
+    display: none;
+}
+.Main-section::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+        background-image: url("https://images.pexels.com/photos/20788614/pexels-photo-20788614/free-photo-of-view-of-a-starry-night-sky.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load");
+      background-size: cover;
+      background-position: center;
+      opacity: 0.4; /* ✅ Only the background image fades */
+      z-index: 1;
+    }
+body{
+  background-color: #111;
+  font-family: Signika Negative, Asap, sans-serif;
+  color:white;
+  overflow:hidden;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #f0f8ff; /* light floral background */
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  perspective: 600px;
+  overflow: hidden;
+  
+}
+
+.flower {
+    font-family: 'Fredoka', sans-serif;
+  position: absolute;
+  font-size: 12px;
+  user-select: none;
+  pointer-events: none;
+  z-index: 20;
+}
+   .animate  .panda-container {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      top:10px;
+      gap: 10px;
+      animation: moveRight 10s linear infinite;
+       z-index: 20;
+    }
+
+    .birthday-text {
+      font-size: 24px;
+      font-weight: bold;
+       
+      white-space: nowrap;
+       z-index: 20;
+    }
+    .text-b{
+        background: linear-gradient(45deg, #ff4ec4, #6a5af9, #43e97b);
+      color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+.animate  .bot-panda{
+    position:absolute;
+    display: flex;
+    bottom:0;
+    height: 200px !important;
+    left:100px !important;
+     z-index: 20;
+     animation: p-move 6s linear 0s 1 forwards;
+    
+ 
+}
+.b-button{
+    position: absolute;
+    bottom:80px;
+    left:0px;
+    padding:12px 28px;
+    margin-left: 20px;
+    border: #f0f8ff solid 1px;
+    background: conic-gradient(at bottom right, #1d4ed8, #1e40af, #111827);
+    box-shadow: rgba(255, 20, 157, 1) 1.95px 1.95px 2.6px;
+    color:white;
+    font-size:18px;
+    font-weight: 500;
+    transition: 1s;
+    animation: text-color 5s ease-in-out infinite;
+    border-radius: 8px;
+     z-index: 20;
+}
+
+.img-f{
+    position: absolute;
+    width:100%;
+        bottom:0px;
+        height:60px;
+         z-index: 20;
+}
+/* .sky{
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+position: absolute;
+bottom: 0px;
+    top:0px;
+    opacity: 0.3;
+    background-image: url("https://images.pexels.com/photos/20788614/pexels-photo-20788614/free-photo-of-view-of-a-starry-night-sky.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load");
+} */
+.message{
+    display:none;
+}
+.message.view{
+    padding:20px;
+    display: flex;
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+    background-image: linear-gradient(0deg, #c2bfbd1a 0%, #fff8d81c 100%);
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+      overflow-y: scroll;
+      transition: 1s;
+}
+.vintage-letter {
+  background: #fef9e7;
+  background-image: linear-gradient(0deg, #fef9e7 0%, #fff8d8 100%);
+  border: 1px solid #d2b48c;
+  padding: 40px 30px;
+  margin: 40px auto;
+  width: 90%;
+  max-width: 600px;
+  font-family: 'Georgia', serif;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #5b4636;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  position: relative;
+  overflow: auto;
+  
+}
+.text-area{
+    overflow-y: scroll;
+}
+
+/* Optional: add torn edge or textured bottom */
+.vintage-letter::before {
+  content: '';
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 20px;
+  width: 100%;
+  background: repeating-linear-gradient(
+    -45deg,
+    #fdf3c1,
+    #fdf3c1 2px,
+    #f0e1a0 2px,
+    #f0e1a0 4px
+  );
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      background: #e74c3c;
+      color: white;
+      border: none;
+      padding: 6px 10px;
+      font-size: 14px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;}
+
+      /* 🌿 Ground / Grass Section */
+
+@keyframes fall {
+  0% {
+    top: -10px;
+    transform: rotate(0deg);
+    opacity: 0.8;
+  }
+  50% {
+    transform: rotate(180deg);
+    opacity: 0.4;
+  }
+  100% {
+    top: 150px;
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes text-color {
+    0%{
+        color:white;
+    }
+    50%{
+        color:#ff4081;
+
+    }
+    100%{
+        color:red;
+    }
+}
+    @keyframes moveRight {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(110%);
+      }
+    }
+   @keyframes p-move {
+      0% {
+        transform: translateX(200%);
+      }
+      100% {
+      transform: translateX(-calc(100vw - 200px));
+      }
+    }
+    @media (max-width: 768px) {
+  .moon {
+    top: 40px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 0 15px #fff, 0 0 30px #ccc;
+  }
+}
