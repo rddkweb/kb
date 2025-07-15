@@ -217,7 +217,7 @@ bottom: 0px;
     width: 100%;
     z-index: 1000;
       overflow-y: scroll;
-      transition: 1s;
+      transition: 1s ease-in;
 }
 .vintage-letter {
   background: #fef9e7;
