@@ -12,6 +12,7 @@ margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: .5s
 }
 
 /* Panda Spinner Container */
@@ -196,6 +197,7 @@ bottom: 0px;
 } */
 .message{
     display:none;
+  transition: .5s
 }
 .message.view{
     padding:20px;
